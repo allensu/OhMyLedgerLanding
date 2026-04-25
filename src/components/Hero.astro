@@ -1,5 +1,5 @@
 ---
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations, withBase } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -52,7 +52,7 @@ const subheadLines = t('hero.subhead').split('\n');
         class="phone-shadow relative aspect-[9/19] w-[260px] overflow-hidden rounded-[40px] border-[10px] border-ink-900 bg-white md:w-[300px]"
       >
         <img
-          src="/screenshots/home.jpg"
+          src={withBase('screenshots/home.jpg')}
           alt="OhMyLedger home screen"
           class="h-full w-full object-cover"
           loading="eager"

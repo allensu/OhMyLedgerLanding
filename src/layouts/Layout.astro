@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, localizedPath, useTranslations, withBase } from '../i18n/utils';
 import LangSwitcher from '../components/LangSwitcher.astro';
 
 const lang = getLangFromUrl(Astro.url);
@@ -12,7 +12,7 @@ const t = useTranslations(lang);
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" href="/app-icon.png" />
+    <link rel="icon" type="image/png" href={withBase('app-icon.png')} />
     <meta name="generator" content={Astro.generator} />
     <title>{t('meta.title')}</title>
     <meta name="description" content={t('meta.description')} />
@@ -32,9 +32,9 @@ const t = useTranslations(lang);
   <body class="font-sans">
     <header class="sticky top-0 z-50 border-b border-ink-300/40 bg-white/80 backdrop-blur">
       <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
-        <a href={lang === 'zh-TW' ? '/' : `/${lang}/`} class="flex items-center gap-2">
+        <a href={localizedPath(lang)} class="flex items-center gap-2">
           <img
-            src="/app-icon.png"
+            src={withBase('app-icon.png')}
             alt={t('brand.name')}
             class="h-9 w-9 rounded-xl"
           />

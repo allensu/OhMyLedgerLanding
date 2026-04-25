@@ -1,5 +1,5 @@
 ---
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations, withBase } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -11,7 +11,7 @@ const t = useTranslations(lang);
       <div>
         <div class="mb-3 flex items-center gap-2">
           <img
-            src="/app-icon.png"
+            src={withBase('app-icon.png')}
             alt={t('brand.name')}
             class="h-9 w-9 rounded-xl"
           />

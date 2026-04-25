@@ -1,13 +1,13 @@
 ---
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations, withBase } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 const shots = [
-  { label: t('screenshots.home'), src: '/screenshots/home.jpg' },
-  { label: t('screenshots.add'), src: '/screenshots/add.jpg' },
-  { label: t('screenshots.stats'), src: '/screenshots/stats.jpg' },
+  { label: t('screenshots.home'), src: withBase('screenshots/home.jpg') },
+  { label: t('screenshots.add'), src: withBase('screenshots/add.jpg') },
+  { label: t('screenshots.stats'), src: withBase('screenshots/stats.jpg') },
 ];
 ---
 
