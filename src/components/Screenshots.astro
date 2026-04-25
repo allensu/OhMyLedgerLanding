@@ -1,0 +1,44 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const shots = [
+  { label: t('screenshots.home'), src: '/screenshots/home.jpg' },
+  { label: t('screenshots.add'), src: '/screenshots/add.jpg' },
+  { label: t('screenshots.stats'), src: '/screenshots/stats.jpg' },
+];
+---
+
+<section class="bg-gradient-to-b from-white to-brand-50/50 py-20 md:py-28">
+  <div class="mx-auto max-w-6xl px-5">
+    <div class="mb-12 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-ink-900 md:text-4xl">
+        {t('screenshots.title')}
+      </h2>
+      <p class="mt-3 text-base text-ink-500 md:text-lg">
+        {t('screenshots.subtitle')}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-3">
+      {
+        shots.map((s) => (
+          <div class="flex flex-col items-center">
+            <div class="phone-shadow relative mb-4 aspect-[9/19] w-[200px] overflow-hidden rounded-[32px] border-[8px] border-ink-900 md:w-[220px]">
+              <img
+                src={s.src}
+                alt={s.label}
+                class="h-full w-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="text-sm font-semibold text-ink-900">{s.label}</div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

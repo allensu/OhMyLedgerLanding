@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-ink-900 antialiased;
+  }
+}
+
+@layer utilities {
+  .hero-gradient {
+    background: radial-gradient(
+        circle at 20% 10%,
+        rgba(124, 77, 255, 0.12),
+        transparent 45%
+      ),
+      radial-gradient(
+        circle at 85% 20%,
+        rgba(30, 136, 229, 0.15),
+        transparent 45%
+      ),
+      linear-gradient(180deg, #ffffff 0%, #f6f9ff 100%);
+  }
+  .phone-shadow {
+    box-shadow: 0 30px 60px -15px rgba(30, 64, 175, 0.25),
+      0 8px 24px -8px rgba(30, 64, 175, 0.15);
+  }
+}
