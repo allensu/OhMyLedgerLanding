@@ -25,6 +25,7 @@ export const ui = {
       '哦賣記帳讓你花錢的當下就記下來，三秒搞定。\n資料只存在你的手機裡，沒帳號、沒雲端、沒廣告。',
     'hero.cta.primary': '免費下載',
     'hero.cta.secondary': '看看怎麼用',
+    'hero.cta.getitfor': '下載',
     'hero.badge': '個人練習作品 · 不收費',
     'hero.installNote': 'Android · 安裝時請允許「來源不明的應用程式」',
 
@@ -85,6 +86,7 @@ export const ui = {
       '哦卖记账让你花钱的当下就记下来，三秒搞定。\n数据只存在你的手机里，没账号、没云端、没广告。',
     'hero.cta.primary': '免费下载',
     'hero.cta.secondary': '看看怎么用',
+    'hero.cta.getitfor': '下载',
     'hero.badge': '个人练习作品 · 不收费',
     'hero.installNote': 'Android · 安装时请允许「未知来源应用」',
 
@@ -145,6 +147,7 @@ export const ui = {
       'OhMyLedger lets you log expenses the moment they happen —\nthree seconds, done. Data stays on your phone. No account, no cloud, no ads.',
     'hero.cta.primary': 'Download free',
     'hero.cta.secondary': 'See how it works',
+    'hero.cta.getitfor': 'Get it for',
     'hero.badge': 'Personal side project · Free forever',
     'hero.installNote': 'Android · Allow installs from unknown sources',
 
@@ -205,6 +208,7 @@ export const ui = {
       'OhMyLedger は使った瞬間に記録できる家計簿です。\nデータはあなたの端末だけに保存。アカウントなし、クラウドなし、広告なし。',
     'hero.cta.primary': '無料ダウンロード',
     'hero.cta.secondary': '使い方を見る',
+    'hero.cta.getitfor': '入手する',
     'hero.badge': '個人プロジェクト · 無料',
     'hero.installNote': 'Android · 「提供元不明のアプリ」のインストールを許可してください',
 
