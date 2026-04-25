@@ -26,6 +26,7 @@ export const ui = {
     'hero.cta.primary': '免費下載',
     'hero.cta.secondary': '看看怎麼用',
     'hero.badge': '個人練習作品 · 不收費',
+    'hero.installNote': 'Android · 安裝時請允許「來源不明的應用程式」',
 
     'features.title': '為什麼是它？',
     'features.subtitle': '解決一個小而真實的問題。',
@@ -85,6 +86,7 @@ export const ui = {
     'hero.cta.primary': '免费下载',
     'hero.cta.secondary': '看看怎么用',
     'hero.badge': '个人练习作品 · 不收费',
+    'hero.installNote': 'Android · 安装时请允许「未知来源应用」',
 
     'features.title': '为什么是它？',
     'features.subtitle': '解决一个小而真实的问题。',
@@ -144,6 +146,7 @@ export const ui = {
     'hero.cta.primary': 'Download free',
     'hero.cta.secondary': 'See how it works',
     'hero.badge': 'Personal side project · Free forever',
+    'hero.installNote': 'Android · Allow installs from unknown sources',
 
     'features.title': 'Why this one?',
     'features.subtitle': 'Solving a small, real problem.',
@@ -203,6 +206,7 @@ export const ui = {
     'hero.cta.primary': '無料ダウンロード',
     'hero.cta.secondary': '使い方を見る',
     'hero.badge': '個人プロジェクト · 無料',
+    'hero.installNote': 'Android · 「提供元不明のアプリ」のインストールを許可してください',
 
     'features.title': 'なぜこのアプリ？',
     'features.subtitle': '小さくて現実的な課題を解決。',
